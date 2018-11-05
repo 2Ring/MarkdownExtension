@@ -2,7 +2,7 @@
     "name": "2ring-markdown-extension",
     "displayName": "2Ring Markdown Extension",
     "description": "All-in-one solution for the markdown formatting problem. Tailored for 2Ring.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "2ring",
     "engines": {
         "vscode": "^1.27.0"
