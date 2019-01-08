@@ -17,7 +17,7 @@
     "contributes": {
         "markdown.markdownItPlugins": true,
         "markdown.previewScripts": [
-            "./fontawesome.min.js"
+            "./external/fontawesome.min.js"
         ],
         "configuration": {
             "title": "2Ring Markdown Extension Configuration",
