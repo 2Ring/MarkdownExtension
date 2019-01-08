@@ -35,13 +35,13 @@ The extension contains support for the following markup:
 > ```
 
 > ```plain
-> ^button^
-> ^button:btn btn-primary^
+> ^ok^
+> ^sample:custom^
 > ```
 > results in:
 > ```html
-> <button>button</button>
-> <button class="btn btn-primary">button</button>
+> <span class="btn btn-primary">ok</span>
+> <span class="custom">sample</span>
 > ```
 
 ## Table of Contents
@@ -50,6 +50,9 @@ The extension also looks for the `%TABLE_OF_CONTENTS%` placeholder line in the m
 A configuration setting `"2r_md.tocLevel"` can be set to use a specific heading for the generated table of contents.
 
 ## Release Notes
+
+### 0.0.4
+- Changed button plugin to span plugin
 
 ### 0.0.3
 - Configurable Table of Contents heading level.

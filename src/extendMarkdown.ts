@@ -26,6 +26,6 @@ export class MarkdownExtender {
         .use(require('markdown-it-container'), 'container', containerOptions)
         .use(require('markdown-it-fontawesome'))
         .use(require('markdown-it-checkbox'))
-        .use(require('markdown-it-button'));
+        .use(require('markdown-it-span'));
     }
 }

@@ -4,6 +4,10 @@
     "description": "All-in-one solution for the markdown formatting problem. Tailored for 2Ring.",
     "version": "0.0.3",
     "publisher": "2ring",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/2Ring/MarkdownExtension"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
@@ -47,10 +51,10 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.5.0",
         "markdown-it-anchor-2ring": "git+https://github.com/2Ring/markdown-it-anchor.git#toc_generate",
-        "markdown-it-button": "git+https://github.com/2Ring/markdown-it-button.git",
         "markdown-it-checkbox": "^1.1.0",
         "markdown-it-container": "^2.0.0",
         "markdown-it-fontawesome": "^0.3.0",
-        "markdown-it-highlightjs": "^3.0.0"
+        "markdown-it-highlightjs": "^3.0.0",
+        "markdown-it-span": "git+https://github.com/2Ring/markdown-it-span.git"
     }
 }
