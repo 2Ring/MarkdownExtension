@@ -44,7 +44,15 @@ The extension contains support for the following markup:
 > <button class="btn btn-primary">button</button>
 > ```
 
+## Table of Contents
+The extension also looks for the `%TABLE_OF_CONTENTS%` placeholder line in the markdown file, which will be replaced with an actual table of contents in the preview.
+
+A configuration setting `"2r_md.tocLevel"` can be set to use a specific heading for the generated table of contents.
+
 ## Release Notes
+
+### 0.0.3
+- Configurable Table of Contents heading level.
 
 ### 0.0.2
 - Support for any container
