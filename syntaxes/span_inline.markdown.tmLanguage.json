@@ -1,0 +1,45 @@
+{
+    "fileTypes": [],
+    "injectionSelector": "meta.paragraph.markdown",
+    "patterns": [
+        {
+            "include": "#span-inline"
+        }
+    ],
+    "repository": {
+        "span-inline": {
+            "name": "markup.span.inline.markdown",
+            "captures": {
+                "1": {
+                    "name": "meta.inline.span.text"
+                },
+                "2": {
+                    "name": "meta.inline.span.classes.delimiter"
+                },
+                "3": {
+                    "name": "meta.inline.span.classes"
+                }
+            },
+            "contentName": "markup.inline.span",
+            "patterns": [
+                {
+                    "name": "markup.span.inline.markdown",
+                    "match": "(?<=^|\\s)(?:\\^)((?:[^:\\^]|\\\\:)+)(?:(?<!\\\\)(:)([\\w -]+))?(?:\\^)",
+                    "comment": "match a end '$' and a begin '$'",
+                    "captures": {
+                        "1": {
+                            "name": "meta.inline.span.text"
+                        },
+                        "2": {
+                            "name": "meta.inline.span.classes.delimiter"
+                        },
+                        "3": {
+                            "name": "meta.inline.span.classes"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "scopeName": "markdown.span_inline"
+}

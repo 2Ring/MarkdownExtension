@@ -1,0 +1,34 @@
+{
+    "fileTypes": [],
+    "injectionSelector": "L:(text.html.markdown)",
+    "patterns": [
+        {
+            "include": "#container-display"
+        }
+    ],
+    "repository": {
+        "container-display": {
+            "name": "markup.container.markdown",
+            "begin": "(?:^[ \\t]*)(:::)( (?:[\\w\\- \\t]+))$",
+            "end": "(?:^[ \\t]*)(\\:\\:\\:)(?![\\w\\-]+)[ \\t]*$",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.definition.container.markdown"
+                },
+                "2": {
+                    "name": "meta.container.classes"
+                }
+            },
+            "endCaptures": {
+                "1": {
+                    "name": "punctuation.definition.container.markdown"
+                }
+            },
+            "contentName": "meta.container.content",
+            "patterns": [
+
+            ]
+        }
+    },
+    "scopeName": "markdown.container_display"
+}
