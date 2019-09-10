@@ -2,7 +2,7 @@
     "name": "2ring-markdown-extension",
     "displayName": "2Ring Markdown Extension",
     "description": "All-in-one solution for the markdown formatting problem. Tailored for 2Ring.",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "publisher": "2ring",
     "repository": {
         "type": "github",
@@ -15,13 +15,30 @@
         "Other"
     ],
     "activationEvents": [
-        "onLanguage:markdown"
+        "onLanguage:markdown",
+        "onCommand:2r_md.listLabel",
+        "onCommand:2r_md.annotation",
+        "onCommand:2r_md.link"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "markdown.markdownItPlugins": true,
         "markdown.previewScripts": [
             "./external/fontawesome.min.js"
+        ],
+        "commands": [
+            {
+                "command": "2r_md.listLabel",
+                "title": "Change text to list label"
+            },
+            {
+                "command": "2r_md.annotation",
+                "title": "Change text to an annotation"
+            },
+            {
+                "command": "2r_md.link",
+                "title": "Change text to a text link"
+            }
         ],
         "configuration": {
             "title": "2Ring Markdown Extension Configuration",
@@ -32,6 +49,22 @@
                     "description": "Sets the heading level for the generated Table of Contents."
                 }
             }
+        },
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "2r_md.listLabel",
+                    "when": "editorLangId == markdown"
+                },
+                {
+                    "command": "2r_md.annotation",
+                    "when": "editorLangId == markdown"
+                },
+                {
+                    "command": "2r_md.link",
+                    "when": "editorLangId == markdown"
+                }
+            ]
         }
     },
     "scripts": {
