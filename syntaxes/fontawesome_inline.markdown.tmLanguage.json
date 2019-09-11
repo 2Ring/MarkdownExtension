@@ -1,0 +1,33 @@
+{
+    "fileTypes": [],
+    "injectionSelector": "meta.paragraph.markdown",
+    "patterns": [
+        {
+            "include": "#fontawesome-inline"
+        }
+    ],
+    "repository": {
+        "fontawesome-inline": {
+            "name": "markup.fontawesome.inline.markdown",
+            "captures": {
+                "0": {
+                    "name": "meta.inline.fontawesome"
+                }
+            },
+            "contentName": "markup.inline.fontawesome",
+            "patterns": [
+                {
+                    "name": "markup.fontawesome.inline.markdown",
+                    "match": "(\\:fa-([\\w\\-]+)\\:)|(\\:fa([\\w])-([\\w\\-]+)\\:)",
+                    "comment": "match a font awesome icon",
+                    "captures": {
+                        "0": {
+                            "name": "meta.inline.fontawesome"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "scopeName": "markdown.fontawesome_inline"
+}

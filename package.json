@@ -76,6 +76,13 @@
                 ]
             },
             {
+                "scopeName": "markdown.fontawesome_inline",
+                "path": "./syntaxes/fontawesome_inline.markdown.tmLanguage.json",
+                "injectTo": [
+                    "text.html.markdown"
+                ]
+            },
+            {
                 "scopeName": "markdown.container_display",
                 "path": "./syntaxes/container.markdown.tmLanguage.json",
                 "injectTo": [
