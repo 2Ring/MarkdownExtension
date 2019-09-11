@@ -3,7 +3,7 @@
     "displayName": "2Ring Markdown Extension",
     "description": "All-in-one solution for the markdown formatting problem. Tailored for 2Ring.",
     "icon": "icon.png",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "2Ring",
     "repository": {
         "type": "github",

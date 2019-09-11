@@ -1,6 +1,6 @@
 {
     "fileTypes": [],
-    "injectionSelector": "L:(text.html.markdown)",
+    "injectionSelector": "R:(text.html.markdown)",
     "patterns": [
         {
             "include": "#container-display"
@@ -9,24 +9,27 @@
     "repository": {
         "container-display": {
             "name": "markup.container.markdown",
-            "begin": "(?:^[ \\t]*)(:::)( (?:[\\w\\- \\t]+))$",
-            "end": "(?:^[ \\t]*)(\\:\\:\\:)(?![\\w\\-]+)[ \\t]*$",
+            "begin": "(^|\\G)(\\s*)(:{3,})\\s*((?:[\\w ]*)(?:\\s+[^:]*)?$)",
+            "end": "(^|\\G)(\\2|\\s{0,3})(\\3)\\s*$",
             "beginCaptures": {
-                "1": {
+                "3": {
                     "name": "punctuation.definition.container.markdown"
                 },
-                "2": {
+                "4": {
                     "name": "meta.container.classes"
                 }
             },
             "endCaptures": {
-                "1": {
+                "3": {
                     "name": "punctuation.definition.container.markdown"
                 }
             },
-            "contentName": "meta.container.content",
             "patterns": [
-
+                {
+                    "begin": "(^|\\G)(\\s*)(.*)",
+                    "while": "(^|\\G)(?!\\s*([:]{3,})\\s*$)",
+                    "contentName": "meta.container.content"
+                }
             ]
         }
     },
