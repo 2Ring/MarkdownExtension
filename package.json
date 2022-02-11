@@ -111,7 +111,7 @@
         "markdown-it-checkbox": "^1.1.0",
         "markdown-it-container": "^2.0.0",
         "markdown-it-fontawesome": "^0.3.0",
-        "markdown-it-highlightjs": "^3.0.0",
+        "markdown-it-highlightjs": "^3.3.1",
         "markdown-it-span": "git+https://github.com/2Ring/markdown-it-span.git"
     }
 }
